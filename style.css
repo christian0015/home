@@ -1,0 +1,366 @@
+/***************************************** Reset CSS ********************************************** */
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    margin: 0;
+}
+
+main {
+    padding: 10px;
+}
+
+header {
+    background-color: rgb(206, 171, 125);
+    color: rgb(219, 181, 13);
+    width: 98%;
+    padding: 15px 0px 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px rgb(190, 190, 190), 0px -20px 1px white;
+    position: fixed;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 140%;
+}
+
+#logo {
+    width: 70px;
+    margin-left: 50px;
+}
+
+.item {
+    margin-right: 200px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1 {
+    color: rgb(117, 44, 44);
+}
+
+h2 {
+    color: rgb(219, 181, 13);
+    font-size: 170%;
+}
+
+/***************************** Section id 1 *********************/
+#info-produit {
+    height: 350px;
+    width: 500px;
+}
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 130%;
+    margin-top: 85px;
+    padding: 10px;
+}
+
+#img1 {
+    width: 400px;
+    border: 10px solid rgb(241, 217, 180);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/***************************** Section id 2 *********************/
+#section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 130%;
+    padding: 10px;
+}
+
+#img2 {
+    width: 440px;
+    height: 350px;
+    border: 10px solid rgb(241, 217, 180);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/***************************** button commande *********************/
+#button-buy {
+    margin-top: 0;
+}
+
+#for-button {
+    display: flex;
+    gap: 30px;
+}
+
+#button-buy {
+    background-color: white;
+    color: rgb(160, 211, 22);
+    border: solid;
+    font-weight: bold;
+    font-size: 120%;
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    transition: 2s;
+}
+
+#button-buy:hover {
+    background-color: green;
+    color: beige;
+}
+
+/***************************** Section id 3 *********************/
+#section3 {
+    display: flex;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+#s-section3 {
+    width: 420px;
+    background-color: antiquewhite;
+    color: rgb(24, 42, 94);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#imgNot {
+    width: 150px;
+}
+
+/***************************** Space Card $4 & Choose *********************/
+#card1,
+#card2,
+#card3,
+#card4 {
+    font-size: 120%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#card1.open,
+#card2.open,
+#card3.open,
+#card4.open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+#choose1,
+#choose2,
+#choose3,
+#choose4 {
+    padding: 30px;
+    margin-bottom: 10px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    background-color: rgb(169, 93, 240);
+    color: white;
+    font-weight: bold;
+}
+
+#choose1:hover {
+    background-color: rgb(236, 196, 18);
+}
+
+#choose2:hover {
+    background-color: rgb(228, 203, 156);
+}
+
+#choose3:hover {
+    background-color: rgb(29, 150, 150);
+}
+
+#choose4:hover {
+    background-color: rgb(82, 83, 83);
+}
+
+
+footer {
+    font-size: large;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(88, 88, 88);
+    color: rgb(203, 203, 216);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+/***************************************** sceen only mx-wth 900px ***********************************************/
+@media screen and (max-width: 900px) {
+    header {
+        width: 92%;
+        padding: 15px 0px 15px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 0px 10px rgb(190, 190, 190), 0px -20px 1px white;
+        position: fixed;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: 140%;
+    }
+
+    #logo {
+        width: 60px;
+        margin-left: 5px;
+    }
+
+    .item {
+        margin-right: 15px;
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 100%;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    /***************************** Section id 1 & 2 *********************/
+    #section1, #section2 {
+        max-width: 90%;
+        display: inline-block;
+    }
+    #section2 {
+        margin-top: 10px;
+    }
+
+    #img1,
+    #img2 {
+        width: 300px;
+    }
+
+
+    #img2 {
+        margin-top: 30px;
+    }
+
+    #info-produit {
+        width: 330px;
+
+    }
+
+    /***************************** Button commande *********************/
+    #button-buy {
+        margin-top: 10px;
+    }
+
+    #for-button {
+        display: inline;
+    }
+
+
+    #section3 {
+        display: block;
+    }
+    
+    #s-section3 {
+        width: 300px;
+        background-color: antiquewhite;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #imgNot {
+        width: 150px;
+    }
+    #specialineiPhoneSE {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #choose {
+        max-width: 70px;
+    }
+
+
+}
+
+/***************************************** sceen only mx-wth 351px ***********************************************/
+@media screen and (max-width: 351px) {
+
+    /***************************** Section id 1 and 2 *********************/
+    #info-produit {
+        height: 300px;
+    }
+    #section1, #section2 {
+        padding: 0;
+    }
+    #img1,
+    #img2 {
+        width: 275px;
+    }
+
+    #img2 {
+        height: 250px;
+    }
+
+    #info-produit {
+        width: 280px;
+    }
+
+    #s-section3 {
+        width: 270px;
+    }
+
+    #choose {
+        max-width: 30px;
+    }
+
+    #specialineiPhoneSE {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
